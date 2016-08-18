@@ -1,0 +1,10 @@
+# Shotgun Pipeline Toolkit configuration file
+# This file was automatically created by tank clone
+# This file reflects the paths in the pipeline configuration
+# entity which is associated with this location (Sandbox).
+
+Windows: '\\productions\boad\Pipeline\development\shotgun_default_sandbox'
+Darwin: '/Volumes/boad/Pipeline/development/shotgun_default_sandbox'
+Linux: ''
+
+# End of file.

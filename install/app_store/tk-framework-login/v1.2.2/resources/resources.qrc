@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="tk-framework-login">
+    <file>backup_codes_light_bg.png</file>
+    <file>google_authenticator.png</file>
+    <file>shotgun_logo_light_medium.png</file>
+    <file>shotgun_with_text_logo.png</file>
+    <file>shotgun_logo.png</file>
+  </qresource>
+</RCC>
