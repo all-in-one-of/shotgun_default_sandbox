@@ -1,4 +1,4 @@
-# Copyright (c) 2015 Shotgun Software Inc.
+# Copyright (c) 2013 Shotgun Software Inc.
 # 
 # CONFIDENTIAL AND PROPRIETARY
 # 
@@ -9,8 +9,16 @@
 # not expressly granted therein are reserved by Shotgun Software Inc.
 
 # the type of dynamic content
-type: "static"
+type: "shotgun_list_field"
 
-# defer creation and only create this folder when 3dsmax starts
-defer_creation: "tk-softimage"
+# the shotgun entity type to connect to
+entity_type: "Asset"
+
+# switch this to true if you only want to make folders for
+# values that are being used. Note that evaluating this is 
+# expensive and may potentially slow down folder creation.
+skip_unused: false 
+
+# the shotgun field to use for the folder name
+field_name: "sg_asset_type"
 

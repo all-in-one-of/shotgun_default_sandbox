@@ -1,4 +1,4 @@
-# Copyright (c) 2015 Shotgun Software Inc.
+# Copyright (c) 2013 Shotgun Software Inc.
 # 
 # CONFIDENTIAL AND PROPRIETARY
 # 
@@ -9,8 +9,8 @@
 # not expressly granted therein are reserved by Shotgun Software Inc.
 
 # the type of dynamic content
+
 type: "static"
 
-# defer creation and only create this folder when 3dsmax starts
-defer_creation: "tk-houdini"
-
+# defer creation and only create this folder when starts
+defer_creation: "tk-mari"
