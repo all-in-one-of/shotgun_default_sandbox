@@ -61,6 +61,7 @@ engines:
   # -------------------------------------------------
   # Shotgun Desktop
   # -------------------------------------------------
+  # MDS MOD - Removed some apps from launcher - OH (19/08/2016)
   tk-desktop:
     apps:
       tk-multi-launch3dsmax: '@launch_3dsmax'
@@ -68,24 +69,25 @@ engines:
       tk-multi-launchhoudini: '@launch_houdini'
       tk-multi-launchmari: '@launch_mari'
       tk-multi-launchmaya: '@launch_maya'
-      tk-multi-launchmotionbuilder: '@launch_motionbuilder'
+      #tk-multi-launchmotionbuilder: '@launch_motionbuilder'
       tk-multi-launchnuke: '@launch_nuke'
       tk-multi-launchnukestudio: '@launch_nukestudio'
-      tk-multi-launchphotoshop: '@launch_photoshop'
-      tk-multi-launchsoftimage: '@launch_softimage'
+      #tk-multi-launchphotoshop: '@launch_photoshop'
+      #tk-multi-launchsoftimage: '@launch_softimage'
       tk-multi-screeningroom: '@launch_screeningroom'
     collapse_rules:
     - {button_label: $app, match: Launch $app, menu_label: None}
     debug_logging: false
     default_group: Studio
     groups:
-    - matches: ['*Houdini*', '*Mari*', '*Max*', '*Maya*', '*Motion*', '*Nuke*', '*Photoshop*',
+    - matches: ['*Houdini*', '*Mari*', '*Max*', '*Maya*', '*Motion*','*Photoshop*',
         '*Softimage*']
       name: Creative Tools
-    - matches: ['*Hiero*']
+    - matches: ['*Fla*','*Nuke']
+      name: Post Tools
+    - matches: ['*Hiero*','*NukeSt*']
       name: Editorial Tools
-    - matches: ['*Fla*']
-      name: Finishing Tools
+
     hook_launch_python: default
     location:
       version: v2.0.16
